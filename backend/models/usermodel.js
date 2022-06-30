@@ -23,6 +23,12 @@ const userSchema = new mongoose.Schema({
     minlength: [8, "Password should be 8 chacrater"],
     select: false,
   },
+  password2: {
+    type: String,
+    required: [true, "Please enter your password"],
+    minlength: [8, "Password should be 8 chacrater"],
+    select: false,
+  },
   avatar: {
     public_id: {
       type: String,

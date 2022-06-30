@@ -16,7 +16,8 @@ const Header = () => {
   const searchSubmitHandler = (e) => {
     e.preventDefault();
     if (keyword.trim()) {
-      navigate(`/products/${keyword}`);
+      // navigate(`/products/${keyword}`);
+      navigate(`/products`);
     } else {
       alert.error("No Products Found");
     }
@@ -55,7 +56,7 @@ const Header = () => {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link " to="#">
+                <Link className="nav-link " to="/contact">
                   Contact
                 </Link>
               </li>

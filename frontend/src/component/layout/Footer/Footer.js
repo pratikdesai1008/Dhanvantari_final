@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import "./Footer.css";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import appStore from "../../../images/Appstore.png";
 import playStore from "../../../images/playstore.png";
 
@@ -8,24 +10,34 @@ const Footer = () => {
     <Fragment>
       <footer id="footer">
         <div className="leftFooter">
-          <h4>DOWNLOAD OUR APP</h4>
-          <p>Download App for Android and IOS mobile phone</p>
-          <img src={playStore} alt="playstore" />
-          <img src={appStore} alt="Appstore" />
+          <h4>Have Queries or Concern?</h4>
+          <a href="/contact">
+
+            <button className="contact-btn">Contact Us</button>
+          </a>
+
+          {/* <p>Download App for Android and IOS mobile phone</p>   */}
+          {/* <img src={playStore} alt="playstore" />
+          <img src={appStore} alt="Appstore" /> */}
         </div>
 
         <div className="midFooter">
-          <h1>ECOMMERCE.</h1>
+          <h1>DHANVANTARI.</h1>
           <p>High Quality is our first priority</p>
 
-          <p>Copyrights 2021 &copy; MeAbhiSingh</p>
+          <p>Copyrights 2021 &copy; Dhanvantari</p>
         </div>
 
         <div className="rightFooter">
           <h4>Follow Us</h4>
-          <a href="http://instagram.com/meabhisingh">Instagram</a>
-          <a href="http://youtube.com/6packprogramemr">Youtube</a>
-          <a href="http://instagram.com/meabhisingh">Facebook</a>
+          <a href="http://instagram.com/meabhisingh">
+            Instagram
+            <InstagramIcon style={{ "padding-left": "7px" }} />
+          </a>
+          {/* <a href="http://youtube.com/6packprogramemr">Youtube</a> */}
+          <a href="http://instagram.com/meabhisingh">Facebook
+            <FacebookIcon style={{ "padding-left": "7px" }} />
+          </a>
         </div>
       </footer>
     </Fragment>

@@ -1,5 +1,5 @@
 .navbar-brand {
-  width: 50%;
+  width: 20%;
 }
 .logo {
   width: 100%;
@@ -23,7 +23,7 @@
 }
 
 .d-flex {
-  margin-left: 97px;
+  margin-left: 279px;
 }
 
 .navbar-toggler {
@@ -102,6 +102,39 @@
   box-shadow: none;
 }
 
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 1.5vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  bottom: 0px;
+  width: 83%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 /* .wrapper {
   position: relative;
   display: flex;
@@ -165,6 +198,9 @@
 } */
 
 @media screen and (max-width: 600px) {
+  .navbar-brand {
+    width: 50%;
+  }
   .form-control {
     width: 204px;
   }
@@ -173,18 +209,16 @@
   }
   .nav-icon {
     right: 6px;
-    top: 205px;
+    top: 215px;
   }
-}
-
-.speedDial {
-  position: fixed;
-  right: 3vmax;
-  top: 1vmax;
-}
-
-.speedDialIcon {
-  width: 56px;
-  height: 56px;
-  border-radius: 100%;
+  .speedDial {
+    position: fixed;
+    right: 1vmax;
+    top: 8.5vmax;
+  }
+  .nav-link::after {
+    content: "";
+    left: 0;
+    width: 0;
+  }
 }

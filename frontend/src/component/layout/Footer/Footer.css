@@ -17,16 +17,26 @@
   font-family: "Roboto";
   font-size: 1vmax;
 }
-.leftFooter > p {
-  text-align: center;
-  font-size: 1.2vmax;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
+
 .leftFooter > img {
   width: 10vmax;
   margin: 1vmax;
   cursor: pointer;
+}
+
+.contact-btn {
+  /* width: 100px; */
+  /* height: 50px; */
+  background: transparent;
+  border: 1px solid white;
+  transition: all 0.5s;
+  border-radius: 6px;
+  color: white;
+  padding: 10px 52px;
+}
+.contact-btn:hover {
+  color: #eb4034;
+  border: 1px solid #eb4034;
 }
 
 .midFooter {

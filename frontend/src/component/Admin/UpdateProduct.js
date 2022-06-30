@@ -41,13 +41,12 @@ const UpdateProduct = ({ match }) => {
     const [imagesPreview, setImagesPreview] = useState([]);
 
     const categories = [
-        "Laptop",
-        "Footwear",
-        "Bottom",
-        "Tops",
-        "Attire",
-        "Camera",
-        "SmartPhones",
+        "Oil's",
+        "Churan's",
+        "Syrup's",
+        "Ointment",
+        "Herbal",
+        "Dhanvantari Product's",
     ];
 
     const productId = params.id;

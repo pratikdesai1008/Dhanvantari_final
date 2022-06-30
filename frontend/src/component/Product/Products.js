@@ -12,12 +12,12 @@ import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
 
 const categories = [
-  "Laptop",
-  "Footware",
-  "Bottom",
-  "Attire",
-  "Tops",
-  "SmartPhones",
+  "Oil's",
+  "Churan's",
+  "Syrup's",
+  "Ointment",
+  "Herbal",
+  "Dhanvantari Product's",
 ];
 
 const Products = () => {
@@ -52,7 +52,7 @@ const Products = () => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title={"PRODUCTS -- ECOMMERCE"} />
+          <MetaData title={"PRODUCTS -- DHANVANTARI"} />
           <h2 className="productsHeading">Products</h2>
           <div className="products">
             {products &&
@@ -73,7 +73,7 @@ const Products = () => {
                 </li>
               ))}
             </ul>
-            <fieldset>
+            {/* <fieldset>
               <Typography component="lenged">Ratings Above</Typography>
               <Slider
                 value={ratings}
@@ -85,7 +85,7 @@ const Products = () => {
                 max={5}
                 valueLabelDisplay="auto"
               />
-            </fieldset>
+            </fieldset> */}
           </div>
 
           {resultPerPage < productsCount && (
@@ -97,9 +97,9 @@ const Products = () => {
                 onChange={setCurrentPageNo}
                 nextPageText="Next"
                 prevPageText="Prev"
-                firstPageText="1st"
-                lastPageText="Last"
-                itemClass="page-item"
+                // firstPageText="1st"
+                // lastPageText="Last"
+                // itemClass="page-item"
                 linkClass="page-link"
                 activeClass="pageItemActive"
                 activeLinkClass="pageLinkActive"

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import WebFont from "webfontloader";
 import Header from "./component/layout/Header/Header";
+import Contact from "./component/layout/Contact/Contact";
 import Footer from "./component/layout/Footer/Footer";
 import Home from "./component/Home/Home.js";
 import ProductDetails from "./component/Product/ProductDetails.js";
@@ -74,6 +75,7 @@ function App() {
             <NotFound />
           }
         /> */}
+        <Route path="/contact" element={<Contact />} />
         <Route
           path="/admin/reviews"
           element={
